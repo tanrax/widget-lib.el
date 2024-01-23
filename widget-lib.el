@@ -1,6 +1,6 @@
 
 (defun widget-lib-separator (&optional separator)
   (let* ((sep (or separator ?_))
-	 (length (window-max-chars-per-line))
-	 (line (make-string length sep)))    
+	 (size (window-max-chars-per-line))
+	 (line (make-string size sep)))    
     (insert line)))
